@@ -8,7 +8,7 @@
         
         <properties>
             <property name="hibernate.archive.autodetection" value="class"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/esport_db"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/***************"/>
             <property name="hibernate.connection.user" value="root"/>
             <property name="hibernate.connection.password" value=""/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
@@ -18,4 +18,5 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
+
 </persistence>
