@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <persistence-unit name="esportPU" transaction-type="RESOURCE_LOCAL">
+        <class>entity.Tournoi</class>
+        <class>entity.Joueur</class>
+        <class>entity.Inscription</class>
+        <class>entity.Utilisateur</class>
+        
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/esport_db"/>
+            <property name="hibernate.connection.user" value="root"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
